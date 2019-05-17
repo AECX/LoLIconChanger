@@ -1,0 +1,10 @@
+G:\Code\Client\League\IconChanger\bin\Debug\IconChanger.exe.config
+G:\Code\Client\League\IconChanger\bin\Debug\IconChanger.exe
+G:\Code\Client\League\IconChanger\bin\Debug\IconChanger.pdb
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.csprojAssemblyReference.cache
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.Form.resources
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.Properties.Resources.resources
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.csproj.GenerateResource.cache
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.csproj.CoreCompileInputs.cache
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.exe
+G:\Code\Client\League\IconChanger\obj\Debug\IconChanger.pdb
