@@ -5,6 +5,6 @@
 * input the id into the text field
 * click set
 
-Doesn't matter wether you open league first or not, just make sure to be logged in.
+Doesn't matter wether you open league first or last, just make sure to be logged in when you're hitting "set".
 
 ![Preview](http://files.aecx.cc/irjYjg)
