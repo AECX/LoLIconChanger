@@ -1,9 +1,0 @@
-G:\Code\Client\League\IconChanger\bin\Release\IconChanger.exe.config
-G:\Code\Client\League\IconChanger\bin\Release\IconChanger.exe
-G:\Code\Client\League\IconChanger\bin\Release\IconChanger.pdb
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.Form.resources
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.Properties.Resources.resources
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.csproj.GenerateResource.cache
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.csproj.CoreCompileInputs.cache
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.exe
-G:\Code\Client\League\IconChanger\obj\Release\IconChanger.pdb

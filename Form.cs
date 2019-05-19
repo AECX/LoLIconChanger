@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,9 +45,7 @@ namespace IconChanger
             lblStatus.Text = @"Waiting/Searching for League Client...";
             txtInput.Enabled = false;
 
-            // Force SSL to be trusted
-            ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
-
+            
             timer.Start();
         }
 
@@ -133,13 +133,16 @@ namespace IconChanger
                 richTextBox1.Text += "PUT " + url;
                 richTextBox1.Text += "\r\n" + Body + "\r\n";
 
+                ServicePointManager.ServerCertificateValidationCallback += ValidateRemoteCertificate;
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
                 Client.UploadData(url, "PUT", ASCIIEncoding.ASCII.GetBytes(Body));
                 
             }
             catch(Exception ex)
             {
-                richTextBox1.Text += ex.Message;
+                richTextBox1.Text += $"Exception at {ex.Source} :: {ex.Message}\r\n";                
             }
         }
 
@@ -153,6 +156,11 @@ namespace IconChanger
             {
                 this.Height = 140;
             }
+        }
+
+        private static bool ValidateRemoteCertificate(object sender, X509Certificate cert, X509Chain chain, SslPolicyErrors error)
+        {
+            return true;
         }
     }
 }
