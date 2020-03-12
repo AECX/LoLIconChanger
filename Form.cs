@@ -51,7 +51,7 @@ namespace IconChanger
 
         private void TxtLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://prnt.sc/ljc7j1");
+            Process.Start("https://share.aecx.cc/LxlSRe");
         }
 
         private void TxtCopy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
